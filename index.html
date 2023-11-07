@@ -1,0 +1,114 @@
+<!DOCTYPE html><html lang="pl"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hustler</title>
+    <script src="js/iconify.min.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/sweetalert.min.js"></script>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/lightbox.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/s1.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <div id="preloader">
+        <div class="loadingLogo" id="loadingLogo"></div>
+    </div>
+    <div class="wrapper">
+        <header class="navbar" id="navbar">
+            <div class="logo" id="logo">
+                gufon.<span style="color: #898ca4; font-size: 26px;">xyz</span>
+                <span class="logo_text"></span>
+            </div>
+            <div class="navBtns" id="navBtns">
+                <ul class="links">
+                    <li class="link" id="l1">Main strona</li>
+                    <li class="link" id="l3">Nasza Oferta</li>
+                </ul>
+                <button class="contact" id="contact">Zakup</button>
+            </div>
+            <div class="menu" id="menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="mainInfo">
+                <h1 class="mainHeading">Sprawdź moją <span style="color: #898ca4;">ofertę</span></h1>
+                <p class="mainParagraph" <span style="color:rgb(0, 0, 0)">Nie ufasz nam? <span style="color: #898ca4;">Mamy ponad 30 legit checków!</span>
+                    </p><p class="mainParagraph" <span style="color:rgb(0, 0, 0)">Sprawdź naszą ofertę klikając przycisk <span style="color: #898ca4;">na dole</span>
+                </p><div class="mainBtns">
+                    <button class="myWork" id="myWorkBtn">Oferta</button>
+                    <input type="text" id="myInput" style="display: none;" value="gufonnn">
+                    <div class="socialMedia" id="socialMedia">
+                        <a href="https://discord.gg/CCMGTZ9ych" target="_blank">
+                            <span class="socialIcon" id="sIcon1">
+                              <span class="iconify" data-icon="mdi:link-box-variant"></span>
+                            </span>
+                          </a>
+                        <div class="socialIcon" id="sIcon2 dc"><span class="iconify" data-icon="akar-icons:discord-fill" onclick="myFunction()"></span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mainImage"></div>
+            <div class="shape"></div>
+            <div class="shape2"></div>
+        </main>
+        <section class="raizu">
+            <div class="raizuHolder">
+                <div class="heading">
+                    <h4 id="myWork">Gufon Shop</h4>
+                    <h1 id="txt">Moja Oferta</h1>
+                </div>
+                <div class="jestespedalem">
+                    <div class="trochecringestary"></div>
+                    <div class="tacalakartajeslitoczytaszjestesgejem">
+                        <div class="oferta" id="oferta">
+                        </div>
+                    </div>                
+                </div>
+                <div class="raizuInfo">
+                    <center class="raizuName">Discord Nitro 1msc / rok</center>
+                    <center class="raizuDesc">1 miesiąc: 20PLN, rok: 80PLN</center>
+                    <center class="raizuDesc">──────────────────</center>
+                    <center class="raizuName">Nitro Boosty na serwer (3 miesiące)</center>
+                    <center class="raizuDesc">7x boostów: 10PLN, 14x boostów: 20PLN</center>
+                    <center class="raizuDesc">──────────────────</center>
+                    <center class="raizuName">Tokeny z nitrem na (3 miesiące)</center>
+                    <center class="raizuDesc">1x token: 5PLN</center>
+                </div>
+            </div>
+        </section>
+        <footer>
+           <h3>© 2023 gufon.xyz</h3>
+        </footer>
+    </div>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollToPlugin.min.js"></script>
+    <script>
+        const download = document.getElementById("downloadRaizuPL");
+        let keyPressed = function(e){
+            if(!e) e = window.event;
+            switch (e.keyCode)
+            {
+                case 80:
+                    download.click();
+            }
+        }
+        window.addEventListener("keyup", keyPressed, true);
+        window.addEventListener("keydown", keyPressed, true);
+    </script>
+    <script src="js/discord.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/form.js"></script>
+
+</body></html>
